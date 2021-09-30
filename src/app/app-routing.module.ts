@@ -1,3 +1,11 @@
+import { CadastrarVagaComponent } from "./components/views/vaga/cadastrar-vaga/cadastrar-vaga.component";
+import { ListarVagaComponent } from "./components/views/vaga/listar-vaga/listar-vaga.component";
+import { AlterarUsuarioComponent } from "./components/views/usuario/alterar-usuario/alterar-usuario.component";
+import { DeletarUsuarioComponent } from "./components/views/usuario/deletar-usuario/deletar-usuario.component";
+import { CadastrarUsuarioComponent } from "./components/views/usuario/cadastrar-usuario/cadastrar-usuario.component";
+import { ListarUsuarioComponent } from "./components/views/usuario/listar-usuario/listar-usuario.component";
+import { AlterarCategoriaComponent } from "./components/views/categoria/alterar-categoria/alterar-categoria.component";
+import { DeletarCategoriaComponent } from "./components/views/categoria/deletar-categoria/deletar-categoria.component";
 import { CadastrarCategoriaComponent } from "./components/views/categoria/cadastrar-categoria/cadastrar-categoria.component";
 import { ListarCategoriaComponent } from "./components/views/categoria/listar-categoria/listar-categoria.component";
 import { NgModule } from "@angular/core";
@@ -19,47 +27,47 @@ const routes: Routes = [
   },
   {
     path: "categoria/deletar",
-    component: ListarCategoriaComponent,
+    component: DeletarCategoriaComponent,
   },
   {
     path: "categoria/alterar",
-    component: CadastrarCategoriaComponent,
+    component: AlterarCategoriaComponent,
   },
   //FIM CADATRAR
   //INICIO USUARIO
   {
     path: "usuario/listar",
-    component: ListarCategoriaComponent,
+    component: ListarUsuarioComponent,
   },
   {
     path: "usuario/cadastrar",
-    component: CadastrarCategoriaComponent,
+    component: CadastrarUsuarioComponent,
   },
   {
     path: "usuario/deletar",
-    component: CadastrarCategoriaComponent,
+    component: DeletarUsuarioComponent,
   },
   {
     path: "usuario/alterar",
-    component: CadastrarCategoriaComponent,
+    component: AlterarUsuarioComponent,
   },
   //FIM USUARIO
   //INICIO VAGA
   {
     path: "vaga/listar",
-    component: ListarCategoriaComponent,
+    component: ListarVagaComponent,
   },
   {
     path: "vaga/cadastrar",
-    component: CadastrarCategoriaComponent,
+    component: CadastrarVagaComponent,
   },
   {
     path: "vaga/deletar",
-    component: ListarCategoriaComponent,
+    component: DeletarUsuarioComponent,
   },
   {
     path: "vaga/alterar",
-    component: CadastrarCategoriaComponent,
+    component: AlterarUsuarioComponent,
   },
   //FIM VAGA
 ];

@@ -1,11 +1,8 @@
-import { Categoria } from './models/categoria';
-import { Component, OnInit } from '@angular/core';
-import { CategoriaService } from './services/categoria.service';
-
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   templateUrl: "./app.component.html",
-  styles: []
+  styles: [],
 })
-export class AppComponent { }
+export class AppComponent {}
