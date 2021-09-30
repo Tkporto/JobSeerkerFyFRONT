@@ -1,0 +1,9 @@
+<a routerLink="/categoria/cadastrar">Nova Categoria</a><br>
+<a routerLink="/usuario/cadastrar">Novo Usuário</a><br>
+<a routerLink="/vaga/cadastrar">Nova Vaga</a><br>
+
+<ol>
+    <li *ngFor="let categoria of categorias">
+        {{ categoria.nome }}
+    </li>
+</ol>

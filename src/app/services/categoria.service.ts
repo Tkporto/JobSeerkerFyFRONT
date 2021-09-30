@@ -15,6 +15,7 @@ export class CategoriaService {
 
   list(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>(`${this.baseURL}/list`);
+    
   }
     
   

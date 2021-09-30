@@ -4,10 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
+import { ListarCategoriaComponent } from './components/views/categoria/listar-categoria/listar-categoria.component';
+import { CadastrarCategoriaComponent } from './components/views/categoria/cadastrar-categoria/cadastrar-categoria.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListarCategoriaComponent,
+    CadastrarCategoriaComponent
   ],
   imports: [
     BrowserModule,
