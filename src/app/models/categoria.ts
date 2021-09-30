@@ -1,5 +1,8 @@
-
 export interface Categoria {
-        nome: string;
-
+  id: number;
+  nome: string;
+  piso: number;
+  teto: number;
+  descricao: string;
+  criadoem?: string;
 }

@@ -5,5 +5,6 @@
 <ol>
     <li *ngFor="let categoria of categorias">
         {{ categoria.nome }}
+        <a routerLink="/categoria/cadastrar/{{ categoria.id }}">Editar categoria</a>
     </li>
 </ol>
