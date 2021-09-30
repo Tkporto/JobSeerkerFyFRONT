@@ -8,6 +8,7 @@ const routes: Routes = [
     path: "",
     component: ListarCategoriaComponent,
   },
+  //INICIO CADATRAR
   {
     path: "categoria/listar",
     component: ListarCategoriaComponent,
@@ -16,6 +17,16 @@ const routes: Routes = [
     path: "categoria/cadastrar",
     component: CadastrarCategoriaComponent,
   },
+  {
+    path: "categoria/deletar",
+    component: ListarCategoriaComponent,
+  },
+  {
+    path: "categoria/alterar",
+    component: CadastrarCategoriaComponent,
+  },
+  //FIM CADATRAR
+  //INICIO USUARIO
   {
     path: "usuario/listar",
     component: ListarCategoriaComponent,
@@ -32,6 +43,25 @@ const routes: Routes = [
     path: "usuario/alterar",
     component: CadastrarCategoriaComponent,
   },
+  //FIM USUARIO
+  //INICIO VAGA
+  {
+    path: "vaga/listar",
+    component: ListarCategoriaComponent,
+  },
+  {
+    path: "vaga/cadastrar",
+    component: CadastrarCategoriaComponent,
+  },
+  {
+    path: "vaga/deletar",
+    component: ListarCategoriaComponent,
+  },
+  {
+    path: "vaga/alterar",
+    component: CadastrarCategoriaComponent,
+  },
+  //FIM VAGA
 ];
 
 @NgModule({
