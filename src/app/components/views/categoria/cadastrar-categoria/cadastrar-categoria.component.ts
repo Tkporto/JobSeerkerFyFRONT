@@ -1,6 +1,7 @@
 import { Categoria } from "src/app/models/categoria";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { CategoriaService } from "src/app/services/categoria.service";
 
 @Component({
   selector: "app-cadastrar-categoria",
@@ -13,11 +14,20 @@ export class CadastrarCategoriaComponent implements OnInit {
   teto!: number;
   descricao!: string;
 
-  constructor(private router: Router) {}
+  constructor(private service: CategoriaService, private router: Router) {}
 
   ngOnInit(): void {}
 
   cadastrar(): void {
-    this.router.navigate([""]);
+    let categoria: Categoria = {
+      nome: this.nome,
+      piso: this.piso,
+      teto: this.teto,
+      descricao: this.descricao,
+    };
+    this.service.create(categoria).subscribe((categoria) => {
+      console.log(categoria);
+      this.router.navigate(["catergoria/listar"]);
+    });
   }
 }
