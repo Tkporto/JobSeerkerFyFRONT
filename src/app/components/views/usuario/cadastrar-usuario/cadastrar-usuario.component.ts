@@ -1,3 +1,5 @@
+import { UsuarioService } from "./../../../../services/usuario.service";
+import { Usuario } from "./../../../../models/usuario";
 import { Router } from "@angular/router";
 import { Component, OnInit } from "@angular/core";
 
@@ -9,13 +11,23 @@ import { Component, OnInit } from "@angular/core";
 export class CadastrarUsuarioComponent implements OnInit {
   nome!: string;
   sobrenome!: string;
+  endereco!: string;
   descricao!: string;
 
-  constructor(private router: Router) {}
+  constructor(private service: UsuarioService, private router: Router) {}
 
   ngOnInit(): void {}
 
   cadastrar(): void {
-    this.router.navigate([""]);
+    let usuario: Usuario = {
+      nome: this.nome,
+      sobrenome: this.sobrenome,
+      endereco: this.endereco,
+      descricao: this.descricao,
+    };
+    this.service.create(usuario).subscribe((usuario) => {
+      console.log(usuario);
+      this.router.navigate(["usuario/listar"]);
+    });
   }
 }

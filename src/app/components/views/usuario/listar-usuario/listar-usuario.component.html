@@ -1,2 +1,10 @@
+<ol>
+    <li *ngFor="let usuario of usuarios">
+        {{ usuario.nome }}
+        <a routerLink="/usuario/cadastrar/{{ usuario.id }}">Editar Usuário</a>
+    </li>
+</ol>
+
+
 <p>listar-usuario works!</p>
 <a routerLink="/">Voltar</a><br>

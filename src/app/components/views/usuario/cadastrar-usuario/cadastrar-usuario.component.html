@@ -1,2 +1,23 @@
+<div id="nome">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="nome" />
+</div>
+<div id="sobrenome">
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" [(ngModel)]="sobrenome" />
+</div>
+<div id="endereco">
+    <label for="endereco">Endereco:</label>
+    <input type="text" name="endereco" [(ngModel)]="endereco" />
+</div>
+<div id="descricao">
+    <label for="descricao">Descrição:</label>
+    <input type="text" name="descricao" [(ngModel)]="descricao" />
+</div>
+<button (click)="cadastrar()">Cadastrar</button>
+
+<a routerLink="/">Voltar</a><br>
+
+
 <p>cadastrar-usuario works!</p>
 <a routerLink="/">Voltar</a><br>
