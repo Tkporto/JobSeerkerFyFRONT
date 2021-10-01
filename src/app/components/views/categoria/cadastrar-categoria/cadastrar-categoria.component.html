@@ -1,24 +1,19 @@
 <div id="nome">
-    <label for="">Nome: </label>
-    <input type="text" name="nome" />
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="nome" />
 </div>
 <div id="piso">
-    <label for="">Piso: </label>
-    <input type="text" name="nome" />
+    <label for="piso">Piso:</label>
+    <input type="text" name="piso" [(ngModel)]="piso" />
 </div>
 <div id="teto">
-    <label for="">Teto: </label>
-    <input type="text" name="nome" />
+    <label for="teto">Teto:</label>
+    <input type="text" name="teto" [(ngModel)]="teto" />
 </div>
 <div id="descricao">
-    <label for="">Descrição: </label>
-    <input type="text" name="nome" />
+    <label for="descricao">Descrição:</label>
+    <input type="text" name="descricao" [(ngModel)]="descricao" />
 </div>
-
-
-
-<p>cadastrar-categoria works!</p>
-
-
+<button (click)="cadastrar()">Cadastrar</button>
 
 <a routerLink="/">Voltar</a><br>
